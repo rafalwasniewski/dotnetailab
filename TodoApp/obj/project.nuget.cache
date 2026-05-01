@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "kmqbrqz+Kww=",
+  "dgSpecHash": "j7n3kuNsReI=",
   "success": true,
   "projectFilePath": "/home/dvrd/Documents/dotnettodo/TodoApp/TodoApp.csproj",
   "expectedPackageFiles": [
     "/home/dvrd/.nuget/packages/microsoft.aspnetcore.server.kestrel/2.3.9/microsoft.aspnetcore.server.kestrel.2.3.9.nupkg.sha512",
-    "/home/dvrd/.nuget/packages/microsoft.aspnetcore.server.kestrel.https/2.3.0/microsoft.aspnetcore.server.kestrel.https.2.3.0.nupkg.sha512"
+    "/home/dvrd/.nuget/packages/microsoft.aspnetcore.server.kestrel.https/2.3.0/microsoft.aspnetcore.server.kestrel.https.2.3.0.nupkg.sha512",
+    "/home/dvrd/.nuget/packages/microsoft.entityframeworkcore/8.0.0/microsoft.entityframeworkcore.8.0.0.nupkg.sha512",
+    "/home/dvrd/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.0/microsoft.entityframeworkcore.abstractions.8.0.0.nupkg.sha512",
+    "/home/dvrd/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.0/microsoft.entityframeworkcore.analyzers.8.0.0.nupkg.sha512",
+    "/home/dvrd/.nuget/packages/microsoft.entityframeworkcore.inmemory/8.0.0/microsoft.entityframeworkcore.inmemory.8.0.0.nupkg.sha512"
   ],
   "logs": [
     {

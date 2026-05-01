@@ -13,20 +13,26 @@ namespace TodoApp.Pages
             _todoService = todoService;
         }
 
-        public TodoListViewModel Model { get; set; } = new TodoListViewModel();
+        public List<TodoItem> Todos { get; set; } = new List<TodoItem>();
+        
+        [BindProperty]
+        public string? NewTodoTitle { get; set; }
+
+        public int CompletedCount => Todos.Count(t => t.IsCompleted);
+        public int TotalCount => Todos.Count;
 
         public async Task<IActionResult> OnGetAsync()
         {
-            Model.Todos = await _todoService.GetTodosAsync();
+            Todos = await _todoService.GetTodosAsync();
             return Page();
         }
 
         public async Task<IActionResult> OnPostAddAsync()
         {
-            if (!string.IsNullOrWhiteSpace(Model.NewTodoTitle))
+            if (!string.IsNullOrWhiteSpace(NewTodoTitle))
             {
-                await _todoService.AddTodoAsync(Model.NewTodoTitle);
-                Model.NewTodoTitle = string.Empty;
+                await _todoService.AddTodoAsync(NewTodoTitle);
+                NewTodoTitle = string.Empty;
             }
             
             return RedirectToPage();

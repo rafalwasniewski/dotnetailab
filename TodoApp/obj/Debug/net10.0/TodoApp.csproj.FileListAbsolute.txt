@@ -32,3 +32,7 @@
 /home/dvrd/Documents/dotnettodo/TodoApp/bin/Debug/net10.0/published/TodoApp.deps.json
 /home/dvrd/Documents/dotnettodo/TodoApp/bin/Debug/net10.0/published/TodoApp.runtimeconfig.json
 /home/dvrd/Documents/dotnettodo/TodoApp/bin/Debug/net10.0/published/TodoApp.staticwebassets.endpoints.json
+/home/dvrd/Documents/dotnettodo/TodoApp/obj/Debug/net10.0/TodoApp.csproj.AssemblyReference.cache
+/home/dvrd/Documents/dotnettodo/TodoApp/obj/Debug/net10.0/TodoApp.RazorAssemblyInfo.cache
+/home/dvrd/Documents/dotnettodo/TodoApp/obj/Debug/net10.0/TodoApp.RazorAssemblyInfo.cs
+/home/dvrd/Documents/dotnettodo/TodoApp/obj/Debug/net10.0/TodoApp.sourcelink.json
