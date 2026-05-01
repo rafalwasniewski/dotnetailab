@@ -1,10 +1,10 @@
 # Todo App
 
-A simple .NET 10.0 web application that displays "ahoj przygodo!" at the root endpoint.
+A simple .NET 10.0 web application that displays "AI qwen3-coder-30b" at the root endpoint.
 
 ## Features
 
-- Displays "ahoj przygodo!" when accessing the root URL
+- Displays "AI qwen3-coder-30b" when accessing the root URL
 - Self-hosted with Kestrel server
 - Dockerized for containerization
 
