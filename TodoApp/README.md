@@ -1,12 +1,15 @@
-# Todo App
+# Modern Todo List App
 
-A simple .NET 10.0 web application that displays "AI qwen3-coder-30b" at the root endpoint.
+A modern .NET 10.0 web application that provides a complete to-do list functionality.
 
 ## Features
 
-- Displays "AI qwen3-coder-30b" when accessing the root URL
-- Self-hosted with Kestrel server
-- Dockerized for containerization
+- Add new todo items
+- List existing todos
+- Mark todos as done
+- Delete completed todos
+- Responsive design using Bootstrap
+- In-memory database storage
 
 ## Running Locally
 

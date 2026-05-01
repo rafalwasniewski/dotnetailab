@@ -21,3 +21,7 @@ build_property.MSBuildProjectDirectory = /home/dvrd/Documents/dotnettodo/TodoApp
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
+
+[/home/dvrd/Documents/dotnettodo/TodoApp/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

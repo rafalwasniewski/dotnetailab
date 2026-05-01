@@ -1,0 +1,87 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Todo List";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <h1 class="text-center mb-4">Modern Todo List</h1>
+            
+            <!-- Add new todo form -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <form method="post" asp-page-handler="Add">
+                        <div class="input-group">
+                            <input asp-for="NewTodoTitle" class="form-control" placeholder="Enter a new todo item..." />
+                            <button type="submit" class="btn btn-primary">Add Todo</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <div class="card text-white bg-success">
+                        <div class="card-body">
+                            <h5 class="card-title">Completed</h5>
+                            <p class="card-text display-4">@Model.CompletedCount</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card text-white bg-info">
+                        <div class="card-body">
+                            <h5 class="card-title">Total</h5>
+                            <p class="card-text display-4">@Model.TotalCount</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Todo list -->
+            @if (Model.Todos.Any())
+            {
+                <div class="list-group">
+                    @foreach (var todo in Model.Todos)
+                    {
+                        <div class="list-group-item @(todo.IsCompleted ? "list-group-item-success" : "")">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <input type="checkbox" @(todo.IsCompleted ? "checked" : "") 
+                                           onchange="this.form.submit()" 
+                                           name="completed" 
+                                           value="@todo.Id"
+                                           form="todo-@todo.Id" />
+                                    <span class="ms-2 @(todo.IsCompleted ? "text-decoration-line-through" : "")">@todo.Title</span>
+                                </div>
+                                <div>
+                                    @if (todo.IsCompleted)
+                                    {
+                                        <form method="post" asp-page-handler="Delete" class="d-inline">
+                                            <input type="hidden" name="id" value="@todo.Id" />
+                                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                        </form>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-secondary">Pending</span>
+                                    }
+                                </div>
+                            </div>
+                            <form method="post" id="todo-@todo.Id" asp-page-handler="Toggle"></form>
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <div class="text-center py-5">
+                    <p class="text-muted">No todos yet. Add one above!</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
