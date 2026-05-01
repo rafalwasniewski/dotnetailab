@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "AhojGemma4App/1.0.0": {
+        "runtime": {
+          "AhojGemma4App.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AhojGemma4App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
