@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "kmqbrqz+Kww=",
+  "success": true,
+  "projectFilePath": "/home/dvrd/Documents/dotnettodo/TodoApp/TodoApp.csproj",
+  "expectedPackageFiles": [
+    "/home/dvrd/.nuget/packages/microsoft.aspnetcore.server.kestrel/2.3.9/microsoft.aspnetcore.server.kestrel.2.3.9.nupkg.sha512",
+    "/home/dvrd/.nuget/packages/microsoft.aspnetcore.server.kestrel.https/2.3.0/microsoft.aspnetcore.server.kestrel.https.2.3.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference Microsoft.AspNetCore.Server.Kestrel will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
+      "projectPath": "/home/dvrd/Documents/dotnettodo/TodoApp/TodoApp.csproj",
+      "warningLevel": 1,
+      "filePath": "/home/dvrd/Documents/dotnettodo/TodoApp/TodoApp.csproj",
+      "libraryId": "Microsoft.AspNetCore.Server.Kestrel",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}
