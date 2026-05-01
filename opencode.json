@@ -9,8 +9,8 @@
         
       },
       "models": {
-        "qwen/qwen3-coder-30b": {
-          "name": "qwen/qwen3-coder-30b"
+        "google/gemma-4-e4b": {
+          "name": "google/gemma-4-e4b"
         }
       }
     }

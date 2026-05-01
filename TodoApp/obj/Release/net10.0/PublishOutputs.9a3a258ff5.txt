@@ -1,7 +1,0 @@
-/home/dvrd/Documents/dotnettodo/TodoApp/published/TodoApp
-/home/dvrd/Documents/dotnettodo/TodoApp/published/appsettings.Development.json
-/home/dvrd/Documents/dotnettodo/TodoApp/published/appsettings.json
-/home/dvrd/Documents/dotnettodo/TodoApp/published/TodoApp.dll
-/home/dvrd/Documents/dotnettodo/TodoApp/published/TodoApp.deps.json
-/home/dvrd/Documents/dotnettodo/TodoApp/published/TodoApp.runtimeconfig.json
-/home/dvrd/Documents/dotnettodo/TodoApp/published/TodoApp.pdb
